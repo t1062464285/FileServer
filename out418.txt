@@ -1,0 +1,350 @@
+
+@@@ #1 disk_readblock: block 0
+
+@@@ port 8000
+New connection 5
+New connection 6
+
+@@@ #2 disk_readblock: block 0
+
+@@@ #3 disk_writeblock: block 1
+
+@@@ #4 disk_writeblock: block 2
+
+@@@ #5 disk_writeblock: block 0
+
+@@@ #6 send 5 29 FS_CREATE user2 /t1dir_u20 d
+
+@@@ #7 close 5
+
+@@@ #8 disk_readblock: block 0
+
+@@@ #9 disk_readblock: block 2
+
+@@@ #10 disk_writeblock: block 3
+
+@@@ #11 disk_writeblock: block 2
+
+@@@ #12 send 6 29 FS_CREATE user1 /t1dir_u10 d
+
+@@@ #13 close 6
+New connection 7
+New connection 5
+
+@@@ #14 disk_readblock: block 0
+
+@@@ #15 disk_readblock: block 2
+
+@@@ #16 disk_readblock: block 3
+
+@@@ #17 disk_writeblock: block 4
+
+@@@ #18 disk_writeblock: block 5
+
+@@@ #19 disk_writeblock: block 3
+
+@@@ #20 disk_readblock: block 0
+
+@@@ #21 disk_readblock: block 2
+
+@@@ #22 disk_readblock: block 1
+
+@@@ #23 send 5 36 FS_CREATE user1 /t1dir_u10/t2dir0 d
+
+@@@ #24 close 5
+
+@@@ #25 disk_writeblock: block 6
+
+@@@ #26 disk_writeblock: block 7
+
+@@@ #27 disk_writeblock: block 1
+
+@@@ #28 send 7 36 FS_CREATE user2 /t1dir_u20/t2dir0 d
+
+@@@ #29 close 7
+New connection 6
+New connection 5
+
+@@@ #30 disk_readblock: block 0
+
+@@@ #31 disk_readblock: block 2
+
+@@@ #32 disk_readblock: block 3
+
+@@@ #33 disk_readblock: block 5
+
+@@@ #34 disk_readblock: block 4
+
+@@@ #35 disk_readblock: block 0
+
+@@@ #36 disk_writeblock: block 8
+
+@@@ #37 disk_writeblock: block 9
+
+@@@ #38 disk_readblock: block 2
+
+@@@ #39 disk_readblock: block 1
+
+@@@ #40 disk_writeblock: block 4
+
+@@@ #41 disk_readblock: block 7
+
+@@@ #42 disk_readblock: block 6
+
+@@@ #43 send 6 43 FS_CREATE user1 /t1dir_u10/t2dir0/t3dir0 d
+
+@@@ #44 close 6
+
+@@@ #45 disk_writeblock: block 10
+
+@@@ #46 disk_writeblock: block 11
+
+@@@ #47 disk_writeblock: block 6
+
+@@@ #48 send 5 43 FS_CREATE user2 /t1dir_u20/t2dir0/t3dir0 d
+
+@@@ #49 close 5
+New connection 7
+
+@@@ #50 disk_readblock: block 0
+
+@@@ #51 disk_readblock: block 2
+
+@@@ #52 disk_readblock: block 1New connection 5
+
+
+@@@ #53 disk_readblock: block 7
+
+@@@ #54 disk_readblock: block 6
+
+@@@ #55 disk_readblock: block 11
+
+@@@ #56 disk_writeblock: block 12
+
+@@@ #57 disk_writeblock: block 11
+
+@@@ #58 disk_readblock: block 0
+
+@@@ #59 disk_readblock: block 2
+
+@@@ #60 disk_readblock: block 3
+
+@@@ #61 send 7 43 FS_CREATE user2 /t1dir_u20/t2dir0/t3dir1 d
+
+@@@ #62 close 7
+
+@@@ #63 disk_readblock: block 5
+
+@@@ #64 disk_readblock: block 4
+
+@@@ #65 disk_readblock: block 9
+
+@@@ #66 disk_writeblock: block 13
+
+@@@ #67 disk_writeblock: block 9
+
+@@@ #68 send 5 43 FS_CREATE user1 /t1dir_u10/t2dir0/t3dir1 d
+
+@@@ #69 close 5
+New connection 6
+
+@@@ #70 disk_readblock: block 0
+
+@@@ #71 disk_readblock: block 2
+
+@@@ #72 disk_readblock: block 1
+
+@@@ #73 disk_readblock: block 7
+
+@@@ #74 disk_readblock: block 6
+
+@@@ #75 disk_readblock: block 11
+
+@@@ #76 disk_writeblock: block 14
+
+@@@ #77 disk_writeblock: block 11
+
+@@@ #78 send 6 43 FS_CREATE user2 /t1dir_u20/t2dir0/t3dir2 d
+
+@@@ #New connection 5
+79 close 6
+
+@@@ #80 disk_readblock: block 0
+
+@@@ #81 disk_readblock: block 2
+
+@@@ #82 disk_readblock: block 3
+
+@@@ #83 disk_readblock: block 5
+
+@@@ #84 disk_readblock: block 4
+
+@@@ #85 disk_readblock: block 9
+
+@@@ #86 disk_writeblock: block 15
+
+@@@ #87 disk_writeblock: block 9
+
+@@@ #88 send 5 43 FS_CREATE user1 /t1dir_u10/t2dir0/t3dir2 d
+
+@@@ #89 close 5
+New connection 7
+New connection 5
+
+@@@ #90 disk_readblock: block 0
+
+@@@ #91 disk_readblock: block 2
+
+@@@ #92 disk_readblock: block 1
+
+@@@ #93 disk_readblock: block 7
+
+@@@ #94 disk_writeblock: block 16
+
+@@@ #95 disk_writeblock: block 7
+
+@@@ #96 disk_readblock: block 0
+
+@@@ #97 disk_readblock: block 2
+
+@@@ #98 disk_readblock: block 3
+
+@@@ #99 send 7 36 FS_CREATE user2 /t1dir_u20/t2dir1 d
+
+@@@ #100 close 7
+
+@@@ #101 disk_readblock: block 5
+
+@@@ #102 disk_writeblock: block 17
+
+@@@ #103 disk_writeblock: block 5
+
+@@@ #104 send 5 36 FS_CREATE user1 /t1dir_u10/t2dir1 d
+
+@@@ #105 close 5
+New connection 6
+
+@@@ #106 disk_readblock: block 0
+
+@@@ #107 disk_readblock: block 2
+
+@@@ #108 disk_readblock: block 1
+
+@@@ #109 disk_readblock: block 7
+
+@@@ #110 disk_readblock: block 16
+
+@@@ #111 disk_writeblock: block 18
+
+@@@ #112 disk_writeblock: block 19
+
+@@@ #113 disk_writeblock: block 16
+
+@@@ #114 send 6 43 FS_CREATE user2 /t1dir_u20/t2dir1/t3dir0 d
+
+@@@ #115 close 6
+New connection 5
+
+@@@ #116 disk_readblock: block 0
+
+@@@ #117 disk_readblock: block 2
+
+@@@ #118 disk_readblock: block 3
+
+@@@ #119 disk_readblock: block 5
+
+@@@ #120 disk_readblock: block 17
+
+@@@ #121 disk_writeblock: block 20
+
+@@@ #122 disk_writeblock: block 21
+
+@@@ #123 disk_writeblock: block 17
+
+@@@ #124 send 5 43 FS_CREATE user1 /t1dir_u10/t2dir1/t3dir0 d
+
+@@@ #125 close 5
+New connection 7
+
+@@@ #126 disk_readblock: block 0
+
+@@@ #127 disk_readblock: block 2
+
+@@@ #128 disk_readblock: block 1
+
+@@@ #129 disk_readblock: block 7
+
+@@@ #130 disk_readblock: block 16
+
+@@@ #131 disk_readblock: block 19
+New connection 5
+
+@@@ #132 disk_writeblock: block 22
+
+@@@ #133 disk_writeblock: block 19
+
+@@@ #134 disk_readblock: block 0
+
+@@@ #135 send 7 43 FS_CREATE user2 /t1dir_u20/t2dir1/t3dir1 d
+
+@@@ #136 close 7
+
+@@@ #137 disk_readblock: block 2
+
+@@@ #138 disk_readblock: block 3
+
+@@@ #139 disk_readblock: block 5
+
+@@@ #140 disk_readblock: block 17
+
+@@@ #141 disk_readblock: block 21
+
+@@@ #142 disk_writeblock: block 23
+
+@@@ #143 disk_writeblock: block 21
+
+@@@ #144 send 5 43 FS_CREATE user1 /t1dir_u10/t2dir1/t3dir1 d
+
+@@@ #145 close 5
+New connection 6
+
+@@@ #146 disk_readblock: block 0
+
+@@@ #147 disk_readblock: block 2
+
+@@@ #148 disk_readblock: block 1
+
+@@@ #149 disk_readblock: block 7
+
+@@@ #150 disk_readblock: block 16
+
+@@@ #151 disk_readblock: block 19
+
+@@@ #152 disk_writeblock: block 24
+
+@@@ #153 disk_writeblock: block 19
+
+@@@ #154 send 6 43 FS_CREATE user2 /t1dir_u20/t2dir1/t3dir2 d
+
+@@@ #155 close 6
+New connection 5
+
+@@@ #156 disk_readblock: block 0
+
+@@@ #157 disk_readblock: block 2
+
+@@@ #158 disk_readblock: block 3
+
+@@@ #159 disk_readblock: block 5
+
+@@@ #160 disk_readblock: block 17
+
+@@@ #161 disk_readblock: block 21
+
+@@@ #162 disk_writeblock: block 25
+
+@@@ #163 disk_writeblock: block 21
+
+@@@ #164 send 5 43 FS_CREATE user1 /t1dir_u10/t2dir1/t3dir2 d
+
+@@@ #165 close 5

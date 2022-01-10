@@ -1,0 +1,159 @@
+
+@@@ #1 disk_readblock: block 0
+
+@@@ port 8000
+New connection 5
+
+@@@ #2 disk_readblock: block 0
+
+@@@ #3 disk_writeblock: block 1
+
+@@@ #4 disk_writeblock: block 2
+
+@@@ #5 disk_writeblock: block 0
+
+@@@ #6 send 5 18 FS_CREATE u1 /a d
+
+@@@ #7 close 5
+New connection 5
+
+@@@ #8 disk_readblock: block 0
+
+@@@ #9 disk_readblock: block 2
+
+@@@ #10 disk_readblock: block 1
+
+@@@ #11 close 5
+New connection 5
+
+@@@ #12 disk_readblock: block 0
+
+@@@ #13 disk_readblock: block 2
+
+@@@ #14 disk_readblock: block 1
+
+@@@ #15 close 5
+New connection 5
+
+@@@ #16 disk_readblock: block 0
+
+@@@ #17 disk_readblock: block 2
+
+@@@ #18 disk_readblock: block 1
+
+@@@ #19 disk_writeblock: block 3
+
+@@@ #20 disk_writeblock: block 4
+
+@@@ #21 disk_writeblock: block 1
+
+@@@ #22 send 5 20 FS_CREATE u1 /a/b f
+
+@@@ #23 close 5
+New connection 5
+
+@@@ #24 disk_readblock: block 0
+
+@@@ #25 disk_readblock: block 2
+
+@@@ #26 disk_readblock: block 1
+
+@@@ #27 disk_readblock: block 4
+
+@@@ #28 disk_readblock: block 3
+
+@@@ #29 close 5
+New connection 5
+
+@@@ #30 disk_readblock: block 0
+
+@@@ #31 disk_readblock: block 2
+
+@@@ #32 disk_readblock: block 1
+
+@@@ #33 disk_readblock: block 4
+
+@@@ #34 disk_writeblock: block 5
+
+@@@ #35 disk_writeblock: block 4
+
+@@@ #36 send 5 20 FS_CREATE u1 /a/c d
+
+@@@ #37 close 5
+New connection 5
+
+@@@ #38 disk_readblock: block 0
+
+@@@ #39 disk_readblock: block 2
+
+@@@ #40 disk_readblock: block 1
+
+@@@ #41 disk_readblock: block 4
+
+@@@ #42 disk_readblock: block 5
+
+@@@ #43 disk_writeblock: block 6
+
+@@@ #44 disk_writeblock: block 7
+
+@@@ #45 disk_writeblock: block 5
+
+@@@ #46 send 5 22 FS_CREATE u1 /a/c/b d
+
+@@@ #47 close 5
+New connection 5
+
+@@@ #48 disk_readblock: block 0
+
+@@@ #49 disk_readblock: block 2
+
+@@@ #50 disk_readblock: block 1
+
+@@@ #51 disk_readblock: block 4
+
+@@@ #52 disk_readblock: block 5
+
+@@@ #53 close 5
+New connection 5
+
+@@@ #54 disk_readblock: block 0
+
+@@@ #55 disk_readblock: block 2
+
+@@@ #56 disk_writeblock: block 8
+
+@@@ #57 disk_writeblock: block 2
+
+@@@ #58 send 5 19 FS_CREATE u1 /f1 f
+
+@@@ #59 close 5
+New connection 5
+
+@@@ #60 disk_readblock: block 0
+
+@@@ #61 disk_readblock: block 2
+
+@@@ #62 disk_readblock: block 8
+
+@@@ #63 close 5
+New connection 5
+
+@@@ #64 disk_readblock: block 0
+
+@@@ #65 disk_readblock: block 2
+
+@@@ #66 disk_readblock: block 8
+
+@@@ #67 close 5
+New connection 5
+
+@@@ #68 close 5
+New connection 5
+
+@@@ #69 disk_readblock: block 0
+
+@@@ #70 disk_readblock: block 2
+
+@@@ #71 disk_readblock: block 8
+
+@@@ #72 close 5

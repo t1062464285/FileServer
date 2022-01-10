@@ -1,0 +1,637 @@
+
+@@@ #1 disk_readblock: block 0
+
+@@@ port 8000
+New connection 5
+
+@@@ #2 disk_readblock: block 0
+
+@@@ #3 disk_writeblock: block 1
+
+@@@ #4 disk_writeblock: block 2
+
+@@@ #5 disk_writeblock: block 0
+
+@@@ #6 send 5 24 FS_CREATE user1 /dir0 d
+
+@@@ #7 close 5
+New connection 5
+
+@@@ #8 disk_readblock: block 0
+
+@@@ #9 disk_readblock: block 2
+
+@@@ #10 disk_writeblock: block 3
+
+@@@ #11 disk_writeblock: block 2
+
+@@@ #12 send 5 24 FS_CREATE user1 /dir1 d
+
+@@@ #13 close 5
+New connection 5
+
+@@@ #14 disk_readblock: block 0
+
+@@@ #15 disk_readblock: block 2
+
+@@@ #16 disk_writeblock: block 4
+
+@@@ #17 disk_writeblock: block 2
+
+@@@ #18 send 5 24 FS_CREATE user1 /dir2 d
+
+@@@ #19 close 5
+New connection 5
+
+@@@ #20 disk_readblock: block 0
+
+@@@ #21 disk_readblock: block 2
+
+@@@ #22 disk_writeblock: block 5
+
+@@@ #23 disk_writeblock: block 2
+
+@@@ #24 send 5 24 FS_CREATE user1 /dir3 d
+
+@@@ #25 close 5
+New connection 5
+
+@@@ #26 disk_readblock: block 0
+
+@@@ #27 disk_readblock: block 2
+
+@@@ #28 disk_writeblock: block 6
+
+@@@ #29 disk_writeblock: block 2
+
+@@@ #30 send 5 24 FS_CREATE user1 /dir4 d
+
+@@@ #31 close 5
+New connection 5
+
+@@@ #32 disk_readblock: block 0
+
+@@@ #33 disk_readblock: block 2
+
+@@@ #34 disk_writeblock: block 7
+
+@@@ #35 disk_writeblock: block 2
+
+@@@ #36 send 5 24 FS_CREATE user1 /dir5 d
+
+@@@ #37 close 5
+New connection 5
+
+@@@ #38 disk_readblock: block 0
+
+@@@ #39 disk_readblock: block 2
+
+@@@ #40 disk_writeblock: block 8
+
+@@@ #41 disk_writeblock: block 2
+
+@@@ #42 send 5 24 FS_CREATE user1 /dir6 d
+
+@@@ #43 close 5
+New connection 5
+
+@@@ #44 disk_readblock: block 0
+
+@@@ #45 disk_readblock: block 2
+
+@@@ #46 disk_writeblock: block 9
+
+@@@ #47 disk_writeblock: block 2
+
+@@@ #48 send 5 24 FS_CREATE user1 /dir7 d
+
+@@@ #49 close 5
+New connection 5
+
+@@@ #50 disk_readblock: block 0
+
+@@@ #51 disk_readblock: block 2
+
+@@@ #52 disk_writeblock: block 10
+
+@@@ #53 disk_writeblock: block 11
+
+@@@ #54 disk_writeblock: block 0
+
+@@@ #55 send 5 24 FS_CREATE user1 /dir8 d
+
+@@@ #56 close 5
+New connection 5
+
+@@@ #57 disk_readblock: block 0
+
+@@@ #58 disk_readblock: block 2
+
+@@@ #59 disk_readblock: block 11
+
+@@@ #60 disk_writeblock: block 12
+
+@@@ #61 disk_writeblock: block 11
+
+@@@ #62 send 5 24 FS_CREATE user1 /dir9 d
+
+@@@ #63 close 5
+New connection 5
+
+@@@ #64 disk_readblock: block 0
+
+@@@ #65 disk_readblock: block 2
+
+@@@ #66 disk_readblock: block 11
+
+@@@ #67 disk_writeblock: block 13
+
+@@@ #68 disk_writeblock: block 11
+
+@@@ #69 send 5 25 FS_CREATE user1 /dir10 d
+
+@@@ #70 close 5
+New connection 5
+
+@@@ #71 disk_readblock: block 0
+
+@@@ #72 disk_readblock: block 2
+
+@@@ #73 disk_readblock: block 11
+
+@@@ #74 disk_writeblock: block 14
+
+@@@ #75 disk_writeblock: block 11
+
+@@@ #76 send 5 25 FS_CREATE user1 /dir11 d
+
+@@@ #77 close 5
+New connection 5
+
+@@@ #78 disk_readblock: block 0
+
+@@@ #79 disk_readblock: block 2
+
+@@@ #80 disk_readblock: block 11
+
+@@@ #81 disk_writeblock: block 15
+
+@@@ #82 disk_writeblock: block 11
+
+@@@ #83 send 5 25 FS_CREATE user1 /dir12 d
+
+@@@ #84 close 5
+New connection 5
+
+@@@ #85 disk_readblock: block 0
+
+@@@ #86 disk_readblock: block 2
+
+@@@ #87 disk_readblock: block 11
+
+@@@ #88 disk_writeblock: block 16
+
+@@@ #89 disk_writeblock: block 11
+
+@@@ #90 send 5 25 FS_CREATE user1 /dir13 d
+
+@@@ #91 close 5
+New connection 5
+
+@@@ #92 disk_readblock: block 0
+
+@@@ #93 disk_readblock: block 2
+
+@@@ #94 disk_readblock: block 11
+
+@@@ #95 disk_writeblock: block 17
+
+@@@ #96 disk_writeblock: block 11
+
+@@@ #97 send 5 25 FS_CREATE user1 /dir14 d
+
+@@@ #98 close 5
+New connection 5
+
+@@@ #99 disk_readblock: block 0
+
+@@@ #100 disk_readblock: block 2
+
+@@@ #101 disk_readblock: block 11
+
+@@@ #102 disk_writeblock: block 18
+
+@@@ #103 disk_writeblock: block 11
+
+@@@ #104 send 5 25 FS_CREATE user1 /dir15 d
+
+@@@ #105 close 5
+New connection 5
+
+@@@ #106 disk_readblock: block 0
+
+@@@ #107 disk_readblock: block 2
+
+@@@ #108 disk_readblock: block 11
+
+@@@ #109 disk_writeblock: block 19
+
+@@@ #110 disk_writeblock: block 20
+
+@@@ #111 disk_writeblock: block 0
+
+@@@ #112 send 5 25 FS_CREATE user1 /dir16 d
+
+@@@ #113 close 5
+New connection 5
+
+@@@ #114 disk_readblock: block 0
+
+@@@ #115 disk_readblock: block 2
+
+@@@ #116 disk_readblock: block 11
+
+@@@ #117 disk_readblock: block 20
+
+@@@ #118 disk_writeblock: block 21
+
+@@@ #119 disk_writeblock: block 20
+
+@@@ #120 send 5 25 FS_CREATE user1 /dir17 d
+
+@@@ #121 close 5
+New connection 5
+
+@@@ #122 disk_readblock: block 0
+
+@@@ #123 disk_readblock: block 2
+
+@@@ #124 disk_readblock: block 11
+
+@@@ #125 disk_readblock: block 20
+
+@@@ #126 disk_writeblock: block 22
+
+@@@ #127 disk_writeblock: block 20
+
+@@@ #128 send 5 25 FS_CREATE user1 /dir18 d
+
+@@@ #129 close 5
+New connection 5
+
+@@@ #130 disk_readblock: block 0
+
+@@@ #131 disk_readblock: block 2
+
+@@@ #132 disk_readblock: block 11
+
+@@@ #133 disk_readblock: block 20
+
+@@@ #134 disk_writeblock: block 23
+
+@@@ #135 disk_writeblock: block 20
+
+@@@ #136 send 5 25 FS_CREATE user1 /dir19 d
+
+@@@ #137 close 5
+New connection 5
+
+@@@ #138 disk_readblock: block 0
+
+@@@ #139 disk_readblock: block 2
+
+@@@ #140 disk_readblock: block 11
+
+@@@ #141 disk_readblock: block 20
+
+@@@ #142 disk_writeblock: block 24
+
+@@@ #143 disk_writeblock: block 20
+
+@@@ #144 send 5 25 FS_CREATE user1 /dir20 d
+
+@@@ #145 close 5
+New connection 5
+
+@@@ #146 disk_readblock: block 0
+
+@@@ #147 disk_readblock: block 2
+
+@@@ #148 disk_readblock: block 11
+
+@@@ #149 disk_readblock: block 20
+
+@@@ #150 disk_writeblock: block 25
+
+@@@ #151 disk_writeblock: block 20
+
+@@@ #152 send 5 25 FS_CREATE user1 /dir21 d
+
+@@@ #153 close 5
+New connection 5
+
+@@@ #154 disk_readblock: block 0
+
+@@@ #155 disk_readblock: block 2
+
+@@@ #156 disk_readblock: block 11
+
+@@@ #157 disk_readblock: block 20
+
+@@@ #158 disk_writeblock: block 26
+
+@@@ #159 disk_writeblock: block 20
+
+@@@ #160 send 5 25 FS_CREATE user1 /dir22 d
+
+@@@ #161 close 5
+New connection 5
+
+@@@ #162 disk_readblock: block 0
+
+@@@ #163 disk_readblock: block 2
+
+@@@ #164 disk_readblock: block 11
+
+@@@ #165 disk_readblock: block 20
+
+@@@ #166 disk_writeblock: block 27
+
+@@@ #167 disk_writeblock: block 20
+
+@@@ #168 send 5 25 FS_CREATE user1 /dir23 d
+
+@@@ #169 close 5
+New connection 5
+
+@@@ #170 disk_readblock: block 0
+
+@@@ #171 disk_readblock: block 2
+
+@@@ #172 disk_readblock: block 11
+
+@@@ #173 disk_readblock: block 20
+
+@@@ #174 disk_writeblock: block 28
+
+@@@ #175 disk_writeblock: block 29
+
+@@@ #176 disk_writeblock: block 0
+
+@@@ #177 send 5 25 FS_CREATE user1 /dir24 d
+
+@@@ #178 close 5
+New connection 5
+
+@@@ #179 disk_readblock: block 0
+
+@@@ #180 disk_readblock: block 2
+
+@@@ #181 disk_readblock: block 11
+
+@@@ #182 disk_readblock: block 20
+
+@@@ #183 disk_readblock: block 29
+
+@@@ #184 disk_writeblock: block 30
+
+@@@ #185 disk_writeblock: block 29
+
+@@@ #186 send 5 25 FS_CREATE user1 /dir25 d
+
+@@@ #187 close 5
+New connection 5
+
+@@@ #188 disk_readblock: block 0
+
+@@@ #189 disk_readblock: block 2
+
+@@@ #190 disk_readblock: block 3
+
+@@@ #191 disk_writeblock: block 2
+
+@@@ #192 send 5 22 FS_DELETE user1 /dir1
+
+@@@ #193 close 5
+New connection 5
+
+@@@ #194 disk_readblock: block 0
+
+@@@ #195 disk_readblock: block 2
+
+@@@ #196 disk_readblock: block 4
+
+@@@ #197 disk_writeblock: block 2
+
+@@@ #198 send 5 22 FS_DELETE user1 /dir2
+
+@@@ #199 close 5
+New connection 5
+
+@@@ #200 disk_readblock: block 0
+
+@@@ #201 disk_readblock: block 2
+
+@@@ #202 disk_readblock: block 11
+
+@@@ #203 disk_readblock: block 20
+
+@@@ #204 disk_readblock: block 29
+
+@@@ #205 disk_writeblock: block 31
+
+@@@ #206 disk_writeblock: block 2
+
+@@@ #207 send 5 26 FS_CREATE user1 /dir100 d
+
+@@@ #208 close 5
+New connection 5
+
+@@@ #209 disk_readblock: block 0
+
+@@@ #210 disk_readblock: block 2
+
+@@@ #211 disk_readblock: block 11
+
+@@@ #212 disk_readblock: block 20
+
+@@@ #213 disk_readblock: block 29
+
+@@@ #214 disk_writeblock: block 32
+
+@@@ #215 disk_writeblock: block 2
+
+@@@ #216 send 5 26 FS_CREATE user1 /dir101 d
+
+@@@ #217 close 5
+New connection 5
+
+@@@ #218 disk_readblock: block 0
+
+@@@ #219 disk_readblock: block 2
+
+@@@ #220 disk_readblock: block 11
+
+@@@ #221 disk_readblock: block 20
+
+@@@ #222 disk_readblock: block 29
+
+@@@ #223 disk_writeblock: block 33
+
+@@@ #224 disk_writeblock: block 29
+
+@@@ #225 send 5 26 FS_CREATE user1 /dir102 d
+
+@@@ #226 close 5
+New connection 5
+
+@@@ #227 disk_readblock: block 0
+
+@@@ #228 disk_readblock: block 2
+
+@@@ #229 disk_readblock: block 11
+
+@@@ #230 disk_readblock: block 10
+
+@@@ #231 disk_writeblock: block 11
+
+@@@ #232 send 5 22 FS_DELETE user1 /dir8
+
+@@@ #233 close 5
+New connection 5
+
+@@@ #234 disk_readblock: block 0
+
+@@@ #235 disk_readblock: block 2
+
+@@@ #236 disk_readblock: block 11
+
+@@@ #237 disk_readblock: block 12
+
+@@@ #238 disk_writeblock: block 11
+
+@@@ #239 send 5 22 FS_DELETE user1 /dir9
+
+@@@ #240 close 5
+New connection 5
+
+@@@ #241 disk_readblock: block 0
+
+@@@ #242 disk_readblock: block 2
+
+@@@ #243 disk_readblock: block 11
+
+@@@ #244 disk_readblock: block 13
+
+@@@ #245 disk_writeblock: block 11
+
+@@@ #246 send 5 23 FS_DELETE user1 /dir10
+
+@@@ #247 close 5
+New connection 5
+
+@@@ #248 disk_readblock: block 0
+
+@@@ #249 disk_readblock: block 2
+
+@@@ #250 disk_readblock: block 11
+
+@@@ #251 disk_readblock: block 14
+
+@@@ #252 disk_writeblock: block 11
+
+@@@ #253 send 5 23 FS_DELETE user1 /dir11
+
+@@@ #254 close 5
+New connection 5
+
+@@@ #255 disk_readblock: block 0
+
+@@@ #256 disk_readblock: block 2
+
+@@@ #257 disk_readblock: block 11
+
+@@@ #258 disk_readblock: block 15
+
+@@@ #259 disk_writeblock: block 11
+
+@@@ #260 send 5 23 FS_DELETE user1 /dir12
+
+@@@ #261 close 5
+New connection 5
+
+@@@ #262 disk_readblock: block 0
+
+@@@ #263 disk_readblock: block 2
+
+@@@ #264 disk_readblock: block 11
+
+@@@ #265 disk_readblock: block 16
+
+@@@ #266 disk_writeblock: block 11
+
+@@@ #267 send 5 23 FS_DELETE user1 /dir13
+
+@@@ #268 close 5
+New connection 5
+
+@@@ #269 disk_readblock: block 0
+
+@@@ #270 disk_readblock: block 2
+
+@@@ #271 disk_readblock: block 11
+
+@@@ #272 disk_readblock: block 17
+
+@@@ #273 disk_writeblock: block 11
+
+@@@ #274 send 5 23 FS_DELETE user1 /dir14
+
+@@@ #275 close 5
+New connection 5
+
+@@@ #276 disk_readblock: block 0
+
+@@@ #277 disk_readblock: block 2
+
+@@@ #278 disk_readblock: block 11
+
+@@@ #279 disk_readblock: block 18
+
+@@@ #280 disk_writeblock: block 0
+
+@@@ #281 send 5 23 FS_DELETE user1 /dir15
+
+@@@ #282 close 5
+New connection 5
+
+@@@ #283 disk_readblock: block 0
+
+@@@ #284 disk_readblock: block 2
+
+@@@ #285 disk_readblock: block 20
+
+@@@ #286 disk_readblock: block 21
+
+@@@ #287 disk_writeblock: block 20
+
+@@@ #288 send 5 23 FS_DELETE user1 /dir17
+
+@@@ #289 close 5
+New connection 5
+
+@@@ #290 disk_readblock: block 0
+
+@@@ #291 disk_readblock: block 2
+
+@@@ #292 disk_readblock: block 20
+
+@@@ #293 disk_readblock: block 29
+
+@@@ #294 disk_readblock: block 28
+
+@@@ #295 disk_writeblock: block 29
+
+@@@ #296 send 5 23 FS_DELETE user1 /dir24
+
+@@@ #297 close 5

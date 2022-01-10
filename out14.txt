@@ -1,0 +1,54 @@
+
+@@@ #1 disk_readblock: block 0
+
+@@@ #2 disk_readblock: block 2
+
+@@@ #3 disk_readblock: block 11
+
+@@@ #4 disk_readblock: block 1
+
+@@@ #5 disk_readblock: block 3
+
+@@@ #6 disk_readblock: block 4
+
+@@@ #7 disk_readblock: block 5
+
+@@@ #8 disk_readblock: block 6
+
+@@@ #9 disk_readblock: block 7
+
+@@@ #10 disk_readblock: block 8
+
+@@@ #11 disk_readblock: block 9
+
+@@@ #12 disk_readblock: block 10
+
+@@@ port 8000
+New connection 5
+
+@@@ #13 disk_readblock: block 0
+
+@@@ #14 disk_readblock: block 2
+
+@@@ #15 disk_readblock: block 3
+
+@@@ #16 disk_writeblock: block 2
+
+@@@ #17 send 5 22 FS_DELETE user1 /dir1
+
+@@@ #18 close 5
+New connection 5
+
+@@@ #19 disk_readblock: block 0
+
+@@@ #20 disk_readblock: block 2
+
+@@@ #21 disk_readblock: block 11
+
+@@@ #22 disk_readblock: block 10
+
+@@@ #23 disk_writeblock: block 0
+
+@@@ #24 send 5 22 FS_DELETE user1 /dir8
+
+@@@ #25 close 5

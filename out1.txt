@@ -1,0 +1,100 @@
+
+@@@ #1 disk_readblock: block 0
+
+@@@ port 8000
+New connection 5
+
+@@@ #2 disk_readblock: block 0
+
+@@@ #3 disk_writeblock: block 1
+
+@@@ #4 disk_writeblock: block 2
+
+@@@ #5 disk_writeblock: block 0
+
+@@@ #6 send 5 23 FS_CREATE user1 /dir d
+
+@@@ #7 close 5
+New connection 5
+
+@@@ #8 disk_readblock: block 0
+
+@@@ #9 disk_readblock: block 2
+
+@@@ #10 disk_readblock: block 1
+
+@@@ #11 disk_writeblock: block 3
+
+@@@ #12 disk_writeblock: block 4
+
+@@@ #13 disk_writeblock: block 1
+
+@@@ #14 send 5 28 FS_CREATE user1 /dir/file f
+
+@@@ #15 close 5
+New connection 5
+
+@@@ #16 disk_readblock: block 0
+
+@@@ #17 disk_readblock: block 2
+
+@@@ #18 disk_readblock: block 1
+
+@@@ #19 disk_readblock: block 4
+
+@@@ #20 disk_readblock: block 3
+
+@@@ #21 disk_writeblock: block 5
+
+@@@ #22 disk_writeblock: block 3
+
+@@@ #23 send 5 32 FS_WRITEBLOCK user1 /dir/file 0
+
+@@@ #24 close 5
+New connection 5
+
+@@@ #25 disk_readblock: block 0
+
+@@@ #26 disk_readblock: block 2
+
+@@@ #27 disk_readblock: block 1
+
+@@@ #28 disk_readblock: block 4
+
+@@@ #29 disk_readblock: block 3
+
+@@@ #30 disk_readblock: block 5
+
+@@@ #31 send 5 543 FS_READBLOCK user1 /dir/file 0We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. -- That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed, -- That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying
+
+@@@ #32 close 5
+New connection 5
+
+@@@ #33 disk_readblock: block 0
+
+@@@ #34 disk_readblock: block 2
+
+@@@ #35 disk_readblock: block 1
+
+@@@ #36 disk_readblock: block 4
+
+@@@ #37 disk_readblock: block 3
+
+@@@ #38 disk_writeblock: block 1
+
+@@@ #39 send 5 26 FS_DELETE user1 /dir/file
+
+@@@ #40 close 5
+New connection 5
+
+@@@ #41 disk_readblock: block 0
+
+@@@ #42 disk_readblock: block 2
+
+@@@ #43 disk_readblock: block 1
+
+@@@ #44 disk_writeblock: block 0
+
+@@@ #45 send 5 21 FS_DELETE user1 /dir
+
+@@@ #46 close 5
