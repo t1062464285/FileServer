@@ -1,5 +1,3 @@
-# xiyutian.xuxf.zhengji.4
-Test case:
-
-error handling:
+# File Server
+A C++ implementation of the linux file server
 
